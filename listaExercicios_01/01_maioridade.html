@@ -7,8 +7,8 @@
     const nascimento = parseInt(prompt(`Informe quando vc nasceu`))
     let faltaParaIdade
     //Processamento
-    const idadeatual = nascimento - 2022
-
+    (idade >= 18) ? faltaParaIdade = `Voce é de maior`
+        : faltaParaIdade = `Falta ${18 - idade} idade para ser de maior`
     //Saída
-
+    document.write(faltaParaIdade)
 </script>
