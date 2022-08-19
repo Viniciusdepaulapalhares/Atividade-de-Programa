@@ -8,11 +8,16 @@
     // - cães grandes: fator 7.
 
     //Entrada
+    const idadeCachorro = prompt(`Informe o porte do seu cachorro (pequeno, escreva a letra: P )- (Medio, escreva a letra: M )- (Grande, escreva a letra: G )- `).toUpperCase()
+    const ano = parseInt(prompt(`Informe o ano que ele tem `))
 
+    let resultado
 
     //Processamento
-
-    
+    (idadeCachorro === `P`) ? resultado = `o fator do seu cachorro é ${ano * 5}`
+        : (idadeCachorro === `M`) ? resultado = `o fator do seu cachorro é ${ano * 6}`
+            : (idadeCachorro === `G`) ? resultado = `o fator do seu cachorro é ${ano * 7}`
+                : resultado = `NÂO PODE!!!`
     //Saída
-
+    document.write(resultado)
 </script>
