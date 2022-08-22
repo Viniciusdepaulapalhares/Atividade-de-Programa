@@ -10,11 +10,16 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-
-
+ const nota = parseInt(prompt("informe a sua nota"))
+ let resultado
     //Processamento
-
-    
+ (nota <= 10) ? resultado = `seu Conceito é "A" `
+ : (nota < 9) ? resultado = `Seu conceito é "B"`
+ : (nota < 8) ? resultado = `Seu conceito é "C"`
+ : (nota < 7) ? resultado = `Seu conceito é "D"`
+ : (nota < 6) ? resultado = `Seu conceito é "E"`
+ :  resultado = `Invalido!`
+ 
     //Saída
-
+ document.write(resultado)
 </script>
