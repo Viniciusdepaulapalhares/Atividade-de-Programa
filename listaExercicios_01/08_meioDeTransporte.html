@@ -6,13 +6,17 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
- const preçoCombustivel = parseInt(prompt(`informe o preço do combustível `))
- conta litrosUsados = parseInt(prompt(`informe quantos litroa voce usa`))
- const preçoTransoportePublico = parseInt
+ const preçoCombustivel = parseInt(prompt(`informe o preço do combustível `));
+ conta litrosUsados = parseInt(prompt(`informe quantos litros voce usa`));
+ const preçoTransoportePublico = parseInt (prompt(`Qual é o preço do transporte publico`));
     //Processamento
-
+  
+  const precoCombFim = preçoCombustivel * litrosUsados;
+  
+  let resultado = precoCombFim > preçoTransoportePublico ? `vale mais a pena ir com o seu proprio automovel, pagando: ${precoCombFim}`
+  : `vale mais a pena ir de onibus porque pagaria so ${preçoTransoportePublico}`;
     
     //Saída
-
+ document.write(resultado);
     
 </script>
