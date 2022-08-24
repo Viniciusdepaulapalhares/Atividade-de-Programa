@@ -8,10 +8,15 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
-
-
+    const horasTrabalhadas = parseInt(prompt("Informe quantas horas voce trabalha"));
+    const quantoVoceRecebe = parseInt(prompt("informe o quanto voce recebe"));
+    
+    let resultado = horasTrabalhadas <= 45 ? `Não haverá adicional` 
+    : (horasTrabalhadas > 45) && (horasTrabalhadas <= 60) ? `havera um adicionar de 20% ${quantoVoceRecebe * 0.20 + quantoVoceRecebe}` 
+    : horasTrabalhadas > 60  ? ` havera um adcionar de 30% ganhando ${quantoVoceRecebe * 0.30 + quantoVoceRecebe}` 
+    : `invalido`
     //Processamento
-
+    document.write(resultado)
     
     //Saída
 
