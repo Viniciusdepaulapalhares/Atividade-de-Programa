@@ -3,8 +3,10 @@
     //PROBLEMA: Vogal - Construa um programa que leia um caractere e informe se este caractere é uma vogal.
 
     // ENTRADA
+
     const vogal = prompt("informe uma Vogal A , E , I , O , U").toUpperCase()
     let resultado
+
     // PROCESSAMENTO
     switch(vogal){
         case "A":
@@ -22,8 +24,13 @@
         case "U":
             resultado = `È uma vogal`
             break;
+        default:   
+            resultado = `Valor Invalido` ;
+            break;
 
     }
+
+    document.write(resultado)
     
     // SAÍDA
 

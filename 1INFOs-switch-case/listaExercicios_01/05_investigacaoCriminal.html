@@ -10,11 +10,69 @@
     */
 
     //ENTRADA
-
+    const telefone = prompt("Telefonou para a vítima? Responda: S/N").toUpperCase()
+    const local =  prompt("Esteve no local do crime? Responda: S/N").toUpperCase()
+    const mora =  prompt("Mora perto da vítima? Responda: S/N").toUpperCase()
+    const devia =  prompt("Devia para a vítima? Responda: S/N").toUpperCase()
+    const jaTrabalhou =  prompt("Já trabalhou com a vítima? Responda: S/N").toUpperCase()
     
+    let total = 0
+    let resultado;
     //PROCESSAMENTO
+    switch (telefone){
+        case `S`: total + 1
+        
+        
+    }
 
+    switch (local){
+        case `S`: total + 1
+        
+        
+    }
+
+    switch (mora){
+        case `S`: total + 1
+        
+        
+    }
+
+    switch (devia){
+        case `S`: total + 1
+        
+        
+    }
+
+    switch (jaTrabalhou){
+        case `S`: total + 1
+        
+        
+    }
+
+    switch (total){
+        case 0: `Inocente `
+    }
+
+    switch (total){
+        case 1:  resultado = `Inocente `
+    }
+
+    switch (total){
+        case 2:  resultado = `Suspeito `
+    }
+
+    switch (total){
+        case 3:  resultado = `Cumplice`
+    }
+
+    switch (total){
+        case 4:  resultado = `Cumplice`
+    }
+    switch (total){
+        case 5: resultado = `Assassino `
+    }
     
     //SAÍDA
 
+document.write(resultado)
 </script>
