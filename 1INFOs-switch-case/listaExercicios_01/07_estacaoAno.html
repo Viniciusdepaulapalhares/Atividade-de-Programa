@@ -5,11 +5,54 @@
     */
 
     //ENTRADA
+    //ENTRADA 
+  
+     const hem = prompt("Informe o hemisfério em que você está:").toLocaleUpperCase(); 
+     const mes = parseInt(prompt("Informe o mês em que você está:")); 
+  
+     //PROCESSAMENTO 
+  
+     let resultado; 
+  
+     switch (norte) { 
+         case 12: 
+         case 1:  
+         case 2: 
+         case 3: resultado = `Inverno.` 
+         break; 
+         case 4: 
+         case 5: 
+         case 6: resultado = `Primavera.` 
+         break; 
+         case 7: 
+         case 8: 
+         case 9: resultado = `Verão.` 
+         break; 
+         case 10: 
+         case 11: resultado = `Outono.` 
+         break; 
+     } 
+  
+     switch (sul) { 
+         case 12: 
+         case 1:  
+         case 2: 
+         case 3: resultado = `Verão.` 
+         break; 
+         case 4: 
+         case 5: 
+         case 6: resultado = `Inverno.` 
+         break; 
+         case 7: 
+         case 8: 
+         case 9: resultado = `Primavera.` 
+         break; 
+         case 10: 
+         case 11: resultado = `Outono.` 
+         break; 
+     } 
+      
+     //SAÍDA
 
-
-    //PROCESSAMENTO
-
-    
-    //SAÍDA
-
+     alert(resultado);
 </script>
