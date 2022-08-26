@@ -6,12 +6,22 @@
     //Se Usuário Comum: Bom dia!
 
     //ENTRADA
+    const informacao = prompt("Informe se vc é Administrador (A), Gerente (G) ou Usuário Comum (U)").toLocaleUpperCase()
+    let resultado
 
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    switch (informacao) {
+        case `A`:
+            resultado = `Bom dia, Senhor`
+            break;
+            case `G`:
+            resultado = `Bom dia, chefe`
+            break;
+            case `U`:
+            resultado = `Bom dia`
+            break;
+        default: resultado = `Valor invalido`
+            break;
+    }
+    document.write(resultado)
 
 </script>
