@@ -6,9 +6,18 @@
     //Se Técnico em Agropecuária (A): Bloco E!
 
     //ENTRADA
-    const aluno = prompt("Informe se vc é Administrador (A), Gerente (G) ou Usuário Comum (U)").toLocaleUpperCase()
+    const aluno = prompt("Informe se vc é informatica (I), quimica (Q), Agropecuária (A)").toLocaleUpperCase()
     let resultado
-
+    
+    switch(aluno){
+      case "I": resultado = `Bloco B`;
+      break;
+      case "Q": resultado = `Bloco D`;
+      break;
+      case "A": resultado = `Bloco E`;
+      break;
+    }
+   document.write(resultado)
     //PROCESSAMENTO
 
 
