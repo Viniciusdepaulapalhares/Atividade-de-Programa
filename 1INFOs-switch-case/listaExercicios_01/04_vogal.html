@@ -4,32 +4,25 @@
 
     // ENTRADA
 
-    const vogal = prompt("informe uma Vogal A , E , I , O , U").toUpperCase()
+    const vogal = prompt("Informe uma vogal: A, E, I, O, U").toLocaleUpperCase()
     let resultado
-
-    // PROCESSAMENTO
-    switch(vogal){
-        case "A":
-            resultado = `È uma vogal`
-            break;
-        case "E":
-            resultado = `È uma vogal`
-            break;
-        case "I":
-            resultado = `È uma vogal`
-            break;
-        case "O":
-            resultado = `È uma vogal`
-            break;
-        case "U":
-            resultado = `È uma vogal`
-            break;
-        default:   
-            resultado = `Valor Invalido` ;
-            break;
-
-    }
-
+   
+   switch(vogal){
+    case `A` : resultado = `é vogal `;
+    break;
+    case `E`: resultado = `é vogal`; 
+    break;
+    case `I`: resultado = `é vogal`; 
+    break;
+    case `O`: resultado = `é vogal`; 
+    break;
+    case `U`: resultado = `é vogal`; 
+    break;
+    default: resultado = `Não é uma vogal`
+    break;
+   }
+   
+   
     document.write(resultado)
     
     // SAÍDA

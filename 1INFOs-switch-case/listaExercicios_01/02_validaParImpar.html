@@ -4,18 +4,19 @@
     */
 
     //ENTRADA
-    const numero = parseInt(prompt("Informe um numero inteiro"))
-    const res = numero % 2
+    const numeroInteiro = parseInt(prompt(`Diga um numero`))
     let resultado
+    const res = numeroInteiro % 2
     //PROCESSAMENTO
-    switch (res){
-        case 0:
-            resultado = `È par`;
-        break;  
-        default:
-            resultado = `Não é par`  
+    switch (res) {
+        case 0: resultado = `é par`;
+            
+            break;
+    
+        default: resultado = `Não é par`;
             break;
     }
+    
     //SAÍDA
     document.write(resultado)
 </script>

@@ -10,26 +10,17 @@
     conforme o caso.
     */
 
-    //ENTRADA
-    const turno = prompt("diga o turno em que voce estuda:`M-matutino ou V-Vespertino ou N- Noturno`")
-    let fator
-    //PROCESSAMENTO
-    switch (turno) {
-        case "M":
-            fator = `Bom Dia!`;
-            break;
-        case "V":
-            fator = `Boa Tarde`;
-            break;
-        case "N":
-            fator = `Boa Noite`;
-            break;
-        default:
-            fator = `Valor Invalido` ;
-            break;
-    }
     
-    document.write(fator)
-    //SAÍDA
+    const turno = prompt(`Informe em que turno voce estuda: M-matutino ou V-Vespertino ou N- Noturno`).toLocaleUpperCase();
+    let resultado;
 
+    switch(turno){
+        case `M`: resultado = `Bom dia`;
+        break;
+        case `V`: resultado = `Boa tarde`;
+        break;
+        case `N`: resultado = `Boa Noite`;
+        break;
+    }
+    document.write(resultado)
 </script>
