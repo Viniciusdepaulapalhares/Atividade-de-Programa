@@ -4,11 +4,9 @@
     //Leia a idade de uma pessoa e informe se ela já chegou à maioridade.Se ela ainda não chegou, informe quantos anos faltam para a maioridade.
 
     //Entrada
-    const nascimento = parseInt(prompt(`Informe quando vc nasceu`))
-    let faltaParaIdade
-    //Processamento
-    (idade >= 18) ? faltaParaIdade = `Voce é de maior`
-        : faltaParaIdade = `Falta ${18 - idade} idade para ser de maior`
-    //Saída
-    document.write(faltaParaIdade)
+        const idade = parseInt(prompt("infone quantos anos voce têm"))
+    let resultado = idade >= 18 ? `você é maior de idade`
+    : `você ainda nao chegou, falta ${18 - idade}`
+    
+    document.write(resultado)
 </script>
