@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    //PROBLEMA
+    //Considere a lista abaixo:
+    // let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    //Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
+
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    let pares = [];
+
+    for (let i of listaDeItens) {
+        if (isNaN(i) === false) {
+        if (i % 2 == 0) {
+            pares.push(i)
+        }
+    }
+    }
+
+    document.write (`Números pares: ${pares.join(", ")}<br>`);
+
+    document.write (`Quantidade de números pares: ${pares.length}<br>`);
+
+    document.write (`Quantidade de itens na lista original: ${listaDeItens.length}<br>`);
+
+
+
+</script>
