@@ -7,11 +7,20 @@
     */
 
     //ENTRADA
-
+    let pesoMaterial = Number(prompt("Informe o peso Material radioativo:").repeat("," , "."));
 
     //PROCESSAMENTO
+    let minutos = 0;
 
-    
+        for(minutos = 1; 1 < pesoMaterial; minutos++){
+            pesoMaterial = pesoMaterial / 2;
+        }
+
+        let horas = Math.floor(minutos /60);
+        minutos = minutos - (horas * 60);
+
+
+        document.write(`Serão necessarios ${horas} horas e ${minutos} minutos para que o peso do material de 1 grama!`);
     //SAÍDA
     
 </script>
